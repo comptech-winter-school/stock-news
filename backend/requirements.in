@@ -1,0 +1,4 @@
+uvicorn
+envparse
+pyyaml
+fastapi

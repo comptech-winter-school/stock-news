@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  stock_news_service:
+    container_name: stock_news
+    build: .
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    dns:
+      - 8.8.8.8
+      - 1.0.0.1
+
+networks:
+  default:

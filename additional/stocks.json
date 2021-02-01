@@ -1,0 +1,3032 @@
+[
+    {
+        "ticket":"MMM",
+        "name":"3M Company",
+        "date":"1976-08-09",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ABT",
+        "name":"Abbott Laboratories",
+        "date":"1964-03-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ABBV",
+        "name":"AbbVie Inc.",
+        "date":"2012-12-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ABMD",
+        "name":"ABIOMED Inc",
+        "date":"2018-05-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ACN",
+        "name":"Accenture plc",
+        "date":"2011-07-06",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ATVI",
+        "name":"Activision Blizzard",
+        "date":"2015-08-31",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"ADBE",
+        "name":"Adobe Inc.",
+        "date":"1997-05-05",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"AMD",
+        "name":"Advanced Micro Devices Inc",
+        "date":"2017-03-20",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"AAP",
+        "name":"Advance Auto Parts",
+        "date":"2015-07-09",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"AES",
+        "name":"AES Corp",
+        "date":"1998-10-02",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"AFL",
+        "name":"AFLAC Inc",
+        "date":"1999-05-28",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"A",
+        "name":"Agilent Technologies Inc",
+        "date":"2000-06-05",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"APD",
+        "name":"Air Products & Chemicals Inc",
+        "date":"1985-04-30",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"AKAM",
+        "name":"Akamai Technologies Inc",
+        "date":"2007-07-12",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ALK",
+        "name":"Alaska Air Group Inc",
+        "date":"2016-05-13",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ALB",
+        "name":"Albemarle Corp",
+        "date":"2016-07-01",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"ARE",
+        "name":"Alexandria Real Estate Equities",
+        "date":"2017-03-20",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"ALXN",
+        "name":"Alexion Pharmaceuticals",
+        "date":"2012-05-25",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ALGN",
+        "name":"Align Technology",
+        "date":"2017-06-19",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ALLE",
+        "name":"Allegion",
+        "date":"2013-12-02",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"LNT",
+        "name":"Alliant Energy Corp",
+        "date":"2016-07-01",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"ALL",
+        "name":"Allstate Corp",
+        "date":"1995-07-13",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"GOOGL",
+        "name":"Alphabet Inc. (Class A)",
+        "date":"2014-04-03",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"GOOG",
+        "name":"Alphabet Inc. (Class C)",
+        "date":"2006-04-03",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"MO",
+        "name":"Altria Group Inc",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"AMZN",
+        "name":"Amazon.com Inc.",
+        "date":"2005-11-18",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"AMCR",
+        "name":"Amcor plc",
+        "date":"2019-06-07",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"AEE",
+        "name":"Ameren Corp",
+        "date":"1991-09-19",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"AAL",
+        "name":"American Airlines Group",
+        "date":"2015-03-23",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"AEP",
+        "name":"American Electric Power",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"AXP",
+        "name":"American Express Co",
+        "date":"1976-06-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"AIG",
+        "name":"American International Group",
+        "date":"1980-03-31",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"AMT",
+        "name":"American Tower Corp.",
+        "date":"2007-11-19",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"AWK",
+        "name":"American Water Works Company Inc",
+        "date":"2016-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"AMP",
+        "name":"Ameriprise Financial",
+        "date":"2005-10-03",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"ABC",
+        "name":"AmerisourceBergen Corp",
+        "date":"2001-08-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"AME",
+        "name":"AMETEK Inc.",
+        "date":"2013-09-23",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"AMGN",
+        "name":"Amgen Inc.",
+        "date":"1992-01-02",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"APH",
+        "name":"Amphenol Corp",
+        "date":"2008-09-30",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ADI",
+        "name":"Analog Devices, Inc.",
+        "date":"1999-10-12",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ANSS",
+        "name":"ANSYS, Inc.",
+        "date":"2017-06-19",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ANTM",
+        "name":"Anthem",
+        "date":"2002-07-25",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"AON",
+        "name":"Aon plc",
+        "date":"1996-04-23",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"AOS",
+        "name":"A.O. Smith Corp",
+        "date":"2017-07-26",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"APA",
+        "name":"Apache Corporation",
+        "date":"1997-07-28",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"AAPL",
+        "name":"Apple Inc.",
+        "date":"1982-11-30",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"AMAT",
+        "name":"Applied Materials Inc.",
+        "date":"1995-03-16",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"APTV",
+        "name":"Aptiv PLC",
+        "date":"2012-12-24",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"ADM",
+        "name":"Archer-Daniels-Midland Co",
+        "date":"1981-07-29",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"ANET",
+        "name":"Arista Networks",
+        "date":"2018-08-28",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"AJG",
+        "name":"Arthur J. Gallagher & Co.",
+        "date":"2016-05-31",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"AIZ",
+        "name":"Assurant",
+        "date":"2007-04-10",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"T",
+        "name":"AT&T Inc.",
+        "date":"1983-11-30 (1957-03-04)",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"ATO",
+        "name":"Atmos Energy",
+        "date":"2019-02-15",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"ADSK",
+        "name":"Autodesk Inc.",
+        "date":"1989-12-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ADP",
+        "name":"Automatic Data Processing",
+        "date":"1981-03-31",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"AZO",
+        "name":"AutoZone Inc",
+        "date":"1997-01-02",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"AVB",
+        "name":"AvalonBay Communities",
+        "date":"2007-01-10",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"AVY",
+        "name":"Avery Dennison Corp",
+        "date":"1987-12-31",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"BKR",
+        "name":"Baker Hughes Co",
+        "date":"2017-07-07",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"BLL",
+        "name":"Ball Corp",
+        "date":"1984-10-31",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"BAC",
+        "name":"Bank of America Corp",
+        "date":"1976-06-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"BK",
+        "name":"The Bank of New York Mellon",
+        "date":"1995-03-31",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"BAX",
+        "name":"Baxter International Inc.",
+        "date":"1972-09-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"BDX",
+        "name":"Becton Dickinson",
+        "date":"1972-09-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"BRK.B",
+        "name":"Berkshire Hathaway",
+        "date":"2010-02-16",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"BBY",
+        "name":"Best Buy Co. Inc.",
+        "date":"1999-06-29",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"BIO",
+        "name":"Bio-Rad Laboratories",
+        "date":"2020-06-22",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"BIIB",
+        "name":"Biogen Inc.",
+        "date":"2003-11-13",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"BLK",
+        "name":"BlackRock",
+        "date":"2011-04-04",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"BA",
+        "name":"Boeing Company",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"BKNG",
+        "name":"Booking Holdings Inc",
+        "date":"2009-11-06",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"BWA",
+        "name":"BorgWarner",
+        "date":"2011-12-19",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"BXP",
+        "name":"Boston Properties",
+        "date":"2006-04-03",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"BSX",
+        "name":"Boston Scientific",
+        "date":"1995-02-24",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"BMY",
+        "name":"Bristol-Myers Squibb",
+        "date":"1957-03-04",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"AVGO",
+        "name":"Broadcom Inc.",
+        "date":"2014-05-08",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"BR",
+        "name":"Broadridge Financial Solutions",
+        "date":"2018-06-18",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"BF.B",
+        "name":"Brown-Forman Corp.",
+        "date":"1982-10-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CHRW",
+        "name":"C. H. Robinson Worldwide",
+        "date":"2007-03-02",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"COG",
+        "name":"Cabot Oil & Gas",
+        "date":"2008-06-23",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"CDNS",
+        "name":"Cadence Design Systems",
+        "date":"2017-09-18",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"CPB",
+        "name":"Campbell Soup",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"COF",
+        "name":"Capital One Financial",
+        "date":"1998-07-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CAH",
+        "name":"Cardinal Health Inc.",
+        "date":"1997-05-27",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"KMX",
+        "name":"Carmax Inc",
+        "date":"2010-06-28",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"CCL",
+        "name":"Carnival Corp.",
+        "date":"1998-12-22",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"CARR",
+        "name":"Carrier Global",
+        "date":"2020-04-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"CTLT",
+        "name":"Catalent",
+        "date":"2020-09-21",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"CAT",
+        "name":"Caterpillar Inc.",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"CBOE",
+        "name":"Cboe Global Markets",
+        "date":"2017-03-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CBRE",
+        "name":"CBRE Group",
+        "date":"2006-11-10",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"CDW",
+        "name":"CDW",
+        "date":"2019-09-23",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"CE",
+        "name":"Celanese",
+        "date":"2018-12-24",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"CNC",
+        "name":"Centene Corporation",
+        "date":"2016-03-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"CNP",
+        "name":"CenterPoint Energy",
+        "date":"1985-07-31",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"CERN",
+        "name":"Cerner",
+        "date":"2010-04-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"CF",
+        "name":"CF Industries Holdings Inc",
+        "date":"2008-08-27",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"SCHW",
+        "name":"Charles Schwab Corporation",
+        "date":"1997-06-02",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CHTR",
+        "name":"Charter Communications",
+        "date":"2016-09-08",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"CVX",
+        "name":"Chevron Corp.",
+        "date":"1957-03-04",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"CMG",
+        "name":"Chipotle Mexican Grill",
+        "date":"2011-04-28",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"CB",
+        "name":"Chubb Limited",
+        "date":"2010-07-15",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CHD",
+        "name":"Church & Dwight",
+        "date":"2015-12-29",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CI",
+        "name":"CIGNA Corp.",
+        "date":"1976-06-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"CINF",
+        "name":"Cincinnati Financial",
+        "date":"1997-12-18",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CTAS",
+        "name":"Cintas Corporation",
+        "date":"2001-03-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"CSCO",
+        "name":"Cisco Systems",
+        "date":"1993-12-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"C",
+        "name":"Citigroup Inc.",
+        "date":"1988-05-31",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CFG",
+        "name":"Citizens Financial Group",
+        "date":"2016-01-29",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CTXS",
+        "name":"Citrix Systems",
+        "date":"1999-12-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"CLX",
+        "name":"The Clorox Company",
+        "date":"1969-03-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CME",
+        "name":"CME Group Inc.",
+        "date":"2006-08-11",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CMS",
+        "name":"CMS Energy",
+        "date":"1999-05-03",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"KO",
+        "name":"Coca-Cola Company",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CTSH",
+        "name":"Cognizant Technology Solutions",
+        "date":"2006-11-17",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"CL",
+        "name":"Colgate-Palmolive",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CMCSA",
+        "name":"Comcast Corp.",
+        "date":"2002-11-19",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"CMA",
+        "name":"Comerica Inc.",
+        "date":"1995-12-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CAG",
+        "name":"Conagra Brands",
+        "date":"1983-08-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"COP",
+        "name":"ConocoPhillips",
+        "date":"1957-03-04",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"ED",
+        "name":"Consolidated Edison",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"STZ",
+        "name":"Constellation Brands",
+        "date":"2005-07-01",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"COO",
+        "name":"The Cooper Companies",
+        "date":"2016-09-23",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"CPRT",
+        "name":"Copart Inc",
+        "date":"2018-07-02",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"GLW",
+        "name":"Corning Inc.",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"CTVA",
+        "name":"Corteva",
+        "date":"2019-06-03",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"COST",
+        "name":"Costco Wholesale Corp.",
+        "date":"1993-10-01",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"CCI",
+        "name":"Crown Castle International Corp.",
+        "date":"2012-03-14",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"CSX",
+        "name":"CSX Corp.",
+        "date":"1967-09-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"CMI",
+        "name":"Cummins Inc.",
+        "date":"1965-03-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"CVS",
+        "name":"CVS Health",
+        "date":"1957-03-04",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"DHI",
+        "name":"D. R. Horton",
+        "date":"2005-06-22",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"DHR",
+        "name":"Danaher Corp.",
+        "date":"",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"DRI",
+        "name":"Darden Restaurants",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"DVA",
+        "name":"DaVita Inc.",
+        "date":"2008-07-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"DE",
+        "name":"Deere & Co.",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"DAL",
+        "name":"Delta Air Lines Inc.",
+        "date":"2013-09-11",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"XRAY",
+        "name":"Dentsply Sirona",
+        "date":"2008-11-14",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"DVN",
+        "name":"Devon Energy",
+        "date":"2000-08-30",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"DXCM",
+        "name":"DexCom",
+        "date":"2020-05-12",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"FANG",
+        "name":"Diamondback Energy",
+        "date":"2018-12-03",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"DLR",
+        "name":"Digital Realty Trust Inc",
+        "date":"2016-05-18",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"DFS",
+        "name":"Discover Financial Services",
+        "date":"2007-07-02",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"DISCA",
+        "name":"Discovery, Inc. (Series A)",
+        "date":"2010-03-01",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"DISCK",
+        "name":"Discovery, Inc. (Series C)",
+        "date":"2014-08-07",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"DISH",
+        "name":"Dish Network",
+        "date":"2017-03-13",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"DG",
+        "name":"Dollar General",
+        "date":"2012-12-03",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"DLTR",
+        "name":"Dollar Tree",
+        "date":"2011-12-19",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"D",
+        "name":"Dominion Energy",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"DPZ",
+        "name":"Domino's Pizza",
+        "date":"2020-05-12",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"DOV",
+        "name":"Dover Corporation",
+        "date":"1985-10-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"DOW",
+        "name":"Dow Inc.",
+        "date":"2019-04-01",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"DTE",
+        "name":"DTE Energy Co.",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"DUK",
+        "name":"Duke Energy",
+        "date":"1976-06-30",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"DRE",
+        "name":"Duke Realty Corp",
+        "date":"2017-07-26",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"DD",
+        "name":"DuPont de Nemours Inc",
+        "date":"2019-04-02",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"DXC",
+        "name":"DXC Technology",
+        "date":"2017-04-04",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"EMN",
+        "name":"Eastman Chemical",
+        "date":"1994-01-01",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"ETN",
+        "name":"Eaton Corporation",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"EBAY",
+        "name":"eBay Inc.",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"ECL",
+        "name":"Ecolab Inc.",
+        "date":"1989-01-31",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"EIX",
+        "name":"Edison Int'l",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"EW",
+        "name":"Edwards Lifesciences",
+        "date":"2011-04-01",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"EA",
+        "name":"Electronic Arts",
+        "date":"2002-07-22",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"EMR",
+        "name":"Emerson Electric Company",
+        "date":"1965-03-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ENPH",
+        "name":"Enphase Energy",
+        "date":"2021-01-07",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ETR",
+        "name":"Entergy Corp.",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"EOG",
+        "name":"EOG Resources",
+        "date":"2000-11-02",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"EFX",
+        "name":"Equifax Inc.",
+        "date":"1997-06-19",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"EQIX",
+        "name":"Equinix",
+        "date":"2015-03-20",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"EQR",
+        "name":"Equity Residential",
+        "date":"2001-12-03",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"ESS",
+        "name":"Essex Property Trust, Inc.",
+        "date":"2014-04-02",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"EL",
+        "name":"Est\u00e9e Lauder Companies",
+        "date":"2006-01-05",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"ETSY",
+        "name":"Etsy",
+        "date":"2020-09-21",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"EVRG",
+        "name":"Evergy",
+        "date":"2018-06-05",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"ES",
+        "name":"Eversource Energy",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"RE",
+        "name":"Everest Re Group Ltd.",
+        "date":"2017-06-19",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"EXC",
+        "name":"Exelon Corp.",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"EXPE",
+        "name":"Expedia Group",
+        "date":"2007-10-02",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"EXPD",
+        "name":"Expeditors",
+        "date":"2007-10-10",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"EXR",
+        "name":"Extra Space Storage",
+        "date":"2016-01-19",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"XOM",
+        "name":"Exxon Mobil Corp.",
+        "date":"1957-03-04",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"FFIV",
+        "name":"F5 Networks",
+        "date":"2010-12-20",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FB",
+        "name":"Facebook, Inc.",
+        "date":"2013-12-23",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"FAST",
+        "name":"Fastenal Co",
+        "date":"2008-09-15",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"FRT",
+        "name":"Federal Realty Investment Trust",
+        "date":"2016-02-01",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"FDX",
+        "name":"FedEx Corporation",
+        "date":"1980-12-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"FIS",
+        "name":"Fidelity National Information Services",
+        "date":"2006-11-10",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FITB",
+        "name":"Fifth Third Bancorp",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"FE",
+        "name":"FirstEnergy Corp",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"FRC",
+        "name":"First Republic Bank",
+        "date":"2019-01-02",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"FISV",
+        "name":"Fiserv Inc",
+        "date":"2001-04-02",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FLT",
+        "name":"FleetCor Technologies Inc",
+        "date":"2018-06-20",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FLIR",
+        "name":"FLIR Systems",
+        "date":"2009-01-02",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FLS",
+        "name":"Flowserve Corporation",
+        "date":"2008-10-02",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"FMC",
+        "name":"FMC Corporation",
+        "date":"2009-08-19",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"F",
+        "name":"Ford Motor Company",
+        "date":"1957-03-04",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"FTNT",
+        "name":"Fortinet",
+        "date":"2018-10-11",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FTV",
+        "name":"Fortive Corp",
+        "date":"2016-07-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"FBHS",
+        "name":"Fortune Brands Home & Security",
+        "date":"2016-06-22",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"FOXA",
+        "name":"Fox Corporation (Class A)",
+        "date":"2013-07-01",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"FOX",
+        "name":"Fox Corporation (Class B)",
+        "date":"2015-09-18",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"BEN",
+        "name":"Franklin Resources",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"FCX",
+        "name":"Freeport-McMoRan Inc.",
+        "date":"",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"GPS",
+        "name":"Gap Inc.",
+        "date":"1986-08-31",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"GRMN",
+        "name":"Garmin Ltd.",
+        "date":"2012-12-12",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"IT",
+        "name":"Gartner Inc",
+        "date":"2017-04-05",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"GD",
+        "name":"General Dynamics",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"GE",
+        "name":"General Electric",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"GIS",
+        "name":"General Mills",
+        "date":"1969-03-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"GM",
+        "name":"General Motors",
+        "date":"2013-06-06",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"GPC",
+        "name":"Genuine Parts",
+        "date":"1973-12-31",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"GILD",
+        "name":"Gilead Sciences",
+        "date":"2004-07-01",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"GL",
+        "name":"Globe Life Inc.",
+        "date":"1989-04-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"GPN",
+        "name":"Global Payments Inc.",
+        "date":"2016-04-25",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"GS",
+        "name":"Goldman Sachs Group",
+        "date":"2002-07-22",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"GWW",
+        "name":"Grainger (W.W.) Inc.",
+        "date":"1981-06-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"HAL",
+        "name":"Halliburton Co.",
+        "date":"1957-03-04",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"HBI",
+        "name":"Hanesbrands Inc",
+        "date":"2015-03-20",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"HIG",
+        "name":"Hartford Financial Svc.Gp.",
+        "date":"1957-03-04",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"HAS",
+        "name":"Hasbro Inc.",
+        "date":"1984-09-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"HCA",
+        "name":"HCA Healthcare",
+        "date":"2015-01-27",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"PEAK",
+        "name":"Healthpeak Properties",
+        "date":"2008-03-31",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"HSIC",
+        "name":"Henry Schein",
+        "date":"2015-03-17",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"HSY",
+        "name":"The Hershey Company",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"HES",
+        "name":"Hess Corporation",
+        "date":"1984-05-31",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"HPE",
+        "name":"Hewlett Packard Enterprise",
+        "date":"2015-11-02",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"HLT",
+        "name":"Hilton Worldwide Holdings Inc",
+        "date":"2017-06-19",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"HFC",
+        "name":"HollyFrontier Corp",
+        "date":"2018-06-18",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"HOLX",
+        "name":"Hologic",
+        "date":"2016-03-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"HD",
+        "name":"Home Depot",
+        "date":"1988-03-31",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"HON",
+        "name":"Honeywell Int'l Inc.",
+        "date":"1964-03-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"HRL",
+        "name":"Hormel Foods Corp.",
+        "date":"2009-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"HST",
+        "name":"Host Hotels & Resorts",
+        "date":"2007-03-20",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"HWM",
+        "name":"Howmet Aerospace",
+        "date":"1964-03-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"HPQ",
+        "name":"HP Inc.",
+        "date":"1974-12-31",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"HUM",
+        "name":"Humana Inc.",
+        "date":"",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"HBAN",
+        "name":"Huntington Bancshares",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"HII",
+        "name":"Huntington Ingalls Industries",
+        "date":"2018-01-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"IEX",
+        "name":"IDEX Corporation",
+        "date":"2019-08-09",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"IDXX",
+        "name":"IDEXX Laboratories",
+        "date":"2017-01-05",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"INFO",
+        "name":"IHS Markit Ltd.",
+        "date":"2017-06-02",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ITW",
+        "name":"Illinois Tool Works",
+        "date":"1986-02-28",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ILMN",
+        "name":"Illumina Inc",
+        "date":"2015-11-19",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"INCY",
+        "name":"Incyte",
+        "date":"2017-02-28",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"IR",
+        "name":"Ingersoll Rand",
+        "date":"2020-03-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"INTC",
+        "name":"Intel Corp.",
+        "date":"1976-12-31",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ICE",
+        "name":"Intercontinental Exchange",
+        "date":"2007-09-26",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"IBM",
+        "name":"International Business Machines",
+        "date":"1957-03-04",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"IP",
+        "name":"International Paper",
+        "date":"1957-03-04",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"IPG",
+        "name":"Interpublic Group",
+        "date":"1992-10-01",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"IFF",
+        "name":"International Flavors & Fragrances",
+        "date":"1976-03-31",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"INTU",
+        "name":"Intuit Inc.",
+        "date":"2000-12-05",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ISRG",
+        "name":"Intuitive Surgical Inc.",
+        "date":"2008-06-02",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"IVZ",
+        "name":"Invesco Ltd.",
+        "date":"2008-08-21",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"IPGP",
+        "name":"IPG Photonics Corp.",
+        "date":"2018-03-07",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"IQV",
+        "name":"IQVIA Holdings Inc.",
+        "date":"2017-08-29",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"IRM",
+        "name":"Iron Mountain Incorporated",
+        "date":"2009-01-06",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"JKHY",
+        "name":"Jack Henry & Associates",
+        "date":"2018-11-13",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"J",
+        "name":"Jacobs Engineering Group",
+        "date":"2007-10-26",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"JBHT",
+        "name":"J. B. Hunt Transport Services",
+        "date":"2015-07-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"SJM",
+        "name":"JM Smucker",
+        "date":"2008-11-06",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"JNJ",
+        "name":"Johnson & Johnson",
+        "date":"1973-06-30",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"JCI",
+        "name":"Johnson Controls International",
+        "date":"2010-08-27",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"JPM",
+        "name":"JPMorgan Chase & Co.",
+        "date":"1975-06-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"JNPR",
+        "name":"Juniper Networks",
+        "date":"2006-06-02",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"KSU",
+        "name":"Kansas City Southern",
+        "date":"2013-05-24",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"K",
+        "name":"Kellogg Co.",
+        "date":"",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"KEY",
+        "name":"KeyCorp",
+        "date":"1994-03-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"KEYS",
+        "name":"Keysight Technologies",
+        "date":"2018-11-06",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"KMB",
+        "name":"Kimberly-Clark",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"KIM",
+        "name":"Kimco Realty",
+        "date":"2006-04-04",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"KMI",
+        "name":"Kinder Morgan",
+        "date":"2012-05-25",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"KLAC",
+        "name":"KLA Corporation",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"KHC",
+        "name":"Kraft Heinz Co",
+        "date":"2015-07-06",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"KR",
+        "name":"Kroger Co.",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"LB",
+        "name":"L Brands Inc.",
+        "date":"1983-09-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LHX",
+        "name":"L3Harris Technologies",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"LH",
+        "name":"Laboratory Corp. of America Holding",
+        "date":"2004-11-01",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"LRCX",
+        "name":"Lam Research",
+        "date":"2012-06-29",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"LW",
+        "name":"Lamb Weston Holdings Inc",
+        "date":"2018-12-03",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"LVS",
+        "name":"Las Vegas Sands",
+        "date":"2019-10-03",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LEG",
+        "name":"Leggett & Platt",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LDOS",
+        "name":"Leidos Holdings",
+        "date":"2019-08-09",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"LEN",
+        "name":"Lennar Corp.",
+        "date":"2005-10-04",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LLY",
+        "name":"Lilly (Eli) & Co.",
+        "date":"1970-12-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"LNC",
+        "name":"Lincoln National",
+        "date":"1976-06-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"LIN",
+        "name":"Linde plc",
+        "date":"1992-07-01",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"LYV",
+        "name":"Live Nation Entertainment",
+        "date":"2019-12-23",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"LKQ",
+        "name":"LKQ Corporation",
+        "date":"2016-05-23",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LMT",
+        "name":"Lockheed Martin Corp.",
+        "date":"1984-07-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"L",
+        "name":"Loews Corp.",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"LOW",
+        "name":"Lowe's Cos.",
+        "date":"1984-02-29",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"LUMN",
+        "name":"Lumen Technologies",
+        "date":"1999-03-25",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"LYB",
+        "name":"LyondellBasell",
+        "date":"2012-09-05",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"MTB",
+        "name":"M&T Bank Corp.",
+        "date":"2004-02-23",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MRO",
+        "name":"Marathon Oil Corp.",
+        "date":"1991-05-01",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"MPC",
+        "name":"Marathon Petroleum",
+        "date":"2011-07-01",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"MKTX",
+        "name":"MarketAxess",
+        "date":"2019-07-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MAR",
+        "name":"Marriott Int'l.",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"MMC",
+        "name":"Marsh & McLennan",
+        "date":"1987-08-31",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MLM",
+        "name":"Martin Marietta Materials",
+        "date":"2014-07-02",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"MAS",
+        "name":"Masco Corp.",
+        "date":"1981-06-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"MA",
+        "name":"Mastercard Inc.",
+        "date":"2008-07-18",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MKC",
+        "name":"McCormick & Co.",
+        "date":"",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"MXIM",
+        "name":"Maxim Integrated Products Inc",
+        "date":"2018-12-03",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MCD",
+        "name":"McDonald's Corp.",
+        "date":"1970-06-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"MCK",
+        "name":"McKesson Corp.",
+        "date":"",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"MDT",
+        "name":"Medtronic plc",
+        "date":"1986-10-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"MRK",
+        "name":"Merck & Co.",
+        "date":"1957-03-04",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"MET",
+        "name":"MetLife Inc.",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MTD",
+        "name":"Mettler Toledo",
+        "date":"2016-09-06",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"MGM",
+        "name":"MGM Resorts International",
+        "date":"2017-07-26",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"MCHP",
+        "name":"Microchip Technology",
+        "date":"2007-09-07",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MU",
+        "name":"Micron Technology",
+        "date":"1994-09-27",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MSFT",
+        "name":"Microsoft Corp.",
+        "date":"1994-06-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MAA",
+        "name":"Mid-America Apartments",
+        "date":"2016-12-02",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"MHK",
+        "name":"Mohawk Industries",
+        "date":"2013-12-23",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TAP",
+        "name":"Molson Coors Beverage Company",
+        "date":"1976-06-30",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"MDLZ",
+        "name":"Mondelez International",
+        "date":"2012-10-02",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"MNST",
+        "name":"Monster Beverage",
+        "date":"2012-06-28",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"MCO",
+        "name":"Moody's Corp",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MS",
+        "name":"Morgan Stanley",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"MOS",
+        "name":"The Mosaic Company",
+        "date":"2011-09-26",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"MSI",
+        "name":"Motorola Solutions Inc.",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"MSCI",
+        "name":"MSCI Inc",
+        "date":"2018-04-04",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"NDAQ",
+        "name":"Nasdaq, Inc.",
+        "date":"2008-10-22",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"NTAP",
+        "name":"NetApp",
+        "date":"1999-06-25",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"NFLX",
+        "name":"Netflix Inc.",
+        "date":"2010-12-20",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"NWL",
+        "name":"Newell Brands",
+        "date":"1989-04-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"NEM",
+        "name":"Newmont Corporation",
+        "date":"1969-06-30",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"NWSA",
+        "name":"News Corp (Class A)",
+        "date":"2013-08-01",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"NWS",
+        "name":"News Corp (Class B)",
+        "date":"2015-09-18",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"NEE",
+        "name":"NextEra Energy",
+        "date":"1976-06-30",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"NLSN",
+        "name":"Nielsen Holdings",
+        "date":"2013-07-09",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"NKE",
+        "name":"Nike, Inc.",
+        "date":"1988-11-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"NI",
+        "name":"NiSource Inc.",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"NSC",
+        "name":"Norfolk Southern Corp.",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"NTRS",
+        "name":"Northern Trust Corp.",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"NOC",
+        "name":"Northrop Grumman",
+        "date":"1985-06-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"NLOK",
+        "name":"NortonLifeLock",
+        "date":"2003-03-25",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"NCLH",
+        "name":"Norwegian Cruise Line Holdings",
+        "date":"2017-10-13",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"NOV",
+        "name":"NOV Inc.",
+        "date":"2005-03-14",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"NRG",
+        "name":"NRG Energy",
+        "date":"2010-01-29",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"NUE",
+        "name":"Nucor Corp.",
+        "date":"1985-04-30",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"NVDA",
+        "name":"Nvidia Corporation",
+        "date":"2001-11-30",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"NVR",
+        "name":"NVR, Inc.",
+        "date":"2019-09-26",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"ORLY",
+        "name":"O'Reilly Automotive",
+        "date":"2009-03-27",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"OXY",
+        "name":"Occidental Petroleum",
+        "date":"1982-12-31",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"ODFL",
+        "name":"Old Dominion Freight Line",
+        "date":"2019-12-09",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"OMC",
+        "name":"Omnicom Group",
+        "date":"",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"OKE",
+        "name":"ONEOK",
+        "date":"2010-03-15",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"ORCL",
+        "name":"Oracle Corp.",
+        "date":"1989-08-31",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"OTIS",
+        "name":"Otis Worldwide",
+        "date":"2020-04-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"PCAR",
+        "name":"PACCAR Inc.",
+        "date":"1980-12-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"PKG",
+        "name":"Packaging Corporation of America",
+        "date":"2017-07-26",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"PH",
+        "name":"Parker-Hannifin",
+        "date":"1985-11-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"PAYX",
+        "name":"Paychex Inc.",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"PAYC",
+        "name":"Paycom",
+        "date":"2020-01-28",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"PYPL",
+        "name":"PayPal",
+        "date":"2015-07-20",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"PNR",
+        "name":"Pentair plc",
+        "date":"2012-10-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"PBCT",
+        "name":"People's United Financial",
+        "date":"2008-11-13",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"PEP",
+        "name":"PepsiCo Inc.",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"PKI",
+        "name":"PerkinElmer",
+        "date":"1985-05-31",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"PRGO",
+        "name":"Perrigo",
+        "date":"2011-12-19",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"PFE",
+        "name":"Pfizer Inc.",
+        "date":"1957-03-04",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"PM",
+        "name":"Philip Morris International",
+        "date":"2008-03-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"PSX",
+        "name":"Phillips 66",
+        "date":"2012-05-01",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"PNW",
+        "name":"Pinnacle West Capital",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"PXD",
+        "name":"Pioneer Natural Resources",
+        "date":"2008-09-24",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"PNC",
+        "name":"PNC Financial Services",
+        "date":"1988-04-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"POOL",
+        "name":"Pool Corporation",
+        "date":"2020-10-07",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"PPG",
+        "name":"PPG Industries",
+        "date":"1957-03-04",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"PPL",
+        "name":"PPL Corp.",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"PFG",
+        "name":"Principal Financial Group",
+        "date":"2002-07-22",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"PG",
+        "name":"Procter & Gamble",
+        "date":"1957-03-04",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"PGR",
+        "name":"Progressive Corp.",
+        "date":"1997-08-04",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"PLD",
+        "name":"Prologis",
+        "date":"2003-07-17",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"PRU",
+        "name":"Prudential Financial",
+        "date":"2002-07-22",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"PEG",
+        "name":"Public Service Enterprise Group (PSEG)",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"PSA",
+        "name":"Public Storage",
+        "date":"2005-08-19",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"PHM",
+        "name":"PulteGroup",
+        "date":"1984-04-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"PVH",
+        "name":"PVH Corp.",
+        "date":"2013-02-15",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"QRVO",
+        "name":"Qorvo",
+        "date":"2015-06-11",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"PWR",
+        "name":"Quanta Services Inc.",
+        "date":"2009-07-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"QCOM",
+        "name":"QUALCOMM Inc.",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"DGX",
+        "name":"Quest Diagnostics",
+        "date":"2002-12-12",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"RL",
+        "name":"Ralph Lauren Corporation",
+        "date":"2007-02-02",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"RJF",
+        "name":"Raymond James Financial, Inc.",
+        "date":"2017-03-20",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"RTX",
+        "name":"Raytheon Technologies",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"O",
+        "name":"Realty Income Corporation",
+        "date":"2015-04-07",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"REG",
+        "name":"Regency Centers Corporation",
+        "date":"2017-03-02",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"REGN",
+        "name":"Regeneron Pharmaceuticals",
+        "date":"2013-05-01",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"RF",
+        "name":"Regions Financial Corp.",
+        "date":"1998-08-28",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"RSG",
+        "name":"Republic Services Inc",
+        "date":"2008-12-05",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"RMD",
+        "name":"ResMed",
+        "date":"2017-07-26",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"RHI",
+        "name":"Robert Half International",
+        "date":"2000-12-05",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ROK",
+        "name":"Rockwell Automation Inc.",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ROL",
+        "name":"Rollins, Inc.",
+        "date":"2018-10-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ROP",
+        "name":"Roper Technologies",
+        "date":"2009-12-23",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"ROST",
+        "name":"Ross Stores",
+        "date":"2009-12-21",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"RCL",
+        "name":"Royal Caribbean Group",
+        "date":"2014-12-05",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"SPGI",
+        "name":"S&P Global Inc.",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"CRM",
+        "name":"Salesforce.com",
+        "date":"2008-09-15",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"SBAC",
+        "name":"SBA Communications",
+        "date":"2017-09-01",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"SLB",
+        "name":"Schlumberger Ltd.",
+        "date":"1965-03-31",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"STX",
+        "name":"Seagate Technology",
+        "date":"2012-07-02",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"SEE",
+        "name":"Sealed Air",
+        "date":"1957-03-04",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"SRE",
+        "name":"Sempra Energy",
+        "date":"",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"NOW",
+        "name":"ServiceNow",
+        "date":"2019-11-21",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"SHW",
+        "name":"Sherwin-Williams",
+        "date":"1964-06-30",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"SPG",
+        "name":"Simon Property Group Inc",
+        "date":"2002-06-26",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"SWKS",
+        "name":"Skyworks Solutions",
+        "date":"2015-03-12",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"SLG",
+        "name":"SL Green Realty",
+        "date":"2015-03-20",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"SNA",
+        "name":"Snap-on",
+        "date":"1982-09-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"SO",
+        "name":"Southern Company",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"LUV",
+        "name":"Southwest Airlines",
+        "date":"1994-07-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"SWK",
+        "name":"Stanley Black & Decker",
+        "date":"1982-09-30",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"SBUX",
+        "name":"Starbucks Corp.",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"STT",
+        "name":"State Street Corp.",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"STE",
+        "name":"STERIS plc",
+        "date":"2019-12-23",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"SYK",
+        "name":"Stryker Corp.",
+        "date":"2000-12-12",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"SIVB",
+        "name":"SVB Financial",
+        "date":"2018-03-19",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"SYF",
+        "name":"Synchrony Financial",
+        "date":"2015-11-18",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"SNPS",
+        "name":"Synopsys Inc.",
+        "date":"2017-03-16",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"SYY",
+        "name":"Sysco Corp.",
+        "date":"1986-12-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"TMUS",
+        "name":"T-Mobile US",
+        "date":"2019-07-15",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"TROW",
+        "name":"T. Rowe Price Group",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"TTWO",
+        "name":"Take-Two Interactive",
+        "date":"2018-03-19",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"TPR",
+        "name":"Tapestry, Inc.",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TGT",
+        "name":"Target Corp.",
+        "date":"1976-12-31",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TEL",
+        "name":"TE Connectivity Ltd.",
+        "date":"2011-10-17",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"FTI",
+        "name":"TechnipFMC",
+        "date":"2009-06-05",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"TDY",
+        "name":"Teledyne Technologies",
+        "date":"2020-06-22",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"TFX",
+        "name":"Teleflex",
+        "date":"2019-01-18",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"TER",
+        "name":"Teradyne",
+        "date":"2020-09-21",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"TSLA",
+        "name":"Tesla, Inc.",
+        "date":"2020-12-21",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TXN",
+        "name":"Texas Instruments",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"TXT",
+        "name":"Textron Inc.",
+        "date":"1978-12-31",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"TMO",
+        "name":"Thermo Fisher Scientific",
+        "date":"",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"TJX",
+        "name":"TJX Companies Inc.",
+        "date":"1985-09-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TSCO",
+        "name":"Tractor Supply Company",
+        "date":"2014-01-24",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"TT",
+        "name":"Trane Technologies plc",
+        "date":"2010-11-17",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"TDG",
+        "name":"TransDigm Group",
+        "date":"2016-06-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"TRV",
+        "name":"The Travelers Companies Inc.",
+        "date":"2002-08-21",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"TRMB",
+        "name":"Trimble Inc.",
+        "date":"2021-01-21",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"TFC",
+        "name":"Truist Financial",
+        "date":"1997-12-04",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"TWTR",
+        "name":"Twitter, Inc.",
+        "date":"2018-06-07",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"TYL",
+        "name":"Tyler Technologies",
+        "date":"2020-06-22",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"TSN",
+        "name":"Tyson Foods",
+        "date":"",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"UDR",
+        "name":"UDR, Inc.",
+        "date":"2016-03-07",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"ULTA",
+        "name":"Ulta Beauty",
+        "date":"2016-04-18",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"USB",
+        "name":"U.S. Bancorp",
+        "date":"",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"UAA",
+        "name":"Under Armour (Class A)",
+        "date":"2014-05-01",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"UA",
+        "name":"Under Armour (Class C)",
+        "date":"2016-04-08",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"UNP",
+        "name":"Union Pacific Corp",
+        "date":"1957-03-04",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"UAL",
+        "name":"United Airlines Holdings",
+        "date":"2015-09-03",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"UNH",
+        "name":"UnitedHealth Group Inc.",
+        "date":"1994-07-01",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"UPS",
+        "name":"United Parcel Service",
+        "date":"2002-07-22",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"URI",
+        "name":"United Rentals, Inc.",
+        "date":"2014-09-20",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"UHS",
+        "name":"Universal Health Services",
+        "date":"2014-09-20",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"UNM",
+        "name":"Unum Group",
+        "date":"1994-03-01",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"VLO",
+        "name":"Valero Energy",
+        "date":"",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"VAR",
+        "name":"Varian Medical Systems",
+        "date":"2007-02-12",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"VTR",
+        "name":"Ventas Inc",
+        "date":"2009-03-04",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"VRSN",
+        "name":"Verisign Inc.",
+        "date":"2006-02-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"VRSK",
+        "name":"Verisk Analytics",
+        "date":"2015-10-08",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"VZ",
+        "name":"Verizon Communications",
+        "date":"1983-11-30",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"VRTX",
+        "name":"Vertex Pharmaceuticals Inc",
+        "date":"2013-09-23",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"VFC",
+        "name":"VF Corporation",
+        "date":"1979-06-30",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"VIAC",
+        "name":"ViacomCBS",
+        "date":"",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"VTRS",
+        "name":"Viatris",
+        "date":"2004-04-23",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"V",
+        "name":"Visa Inc.",
+        "date":"2009-12-21",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"VNT",
+        "name":"Vontier",
+        "date":"2020-10-09",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"VNO",
+        "name":"Vornado Realty Trust",
+        "date":"",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"VMC",
+        "name":"Vulcan Materials",
+        "date":"1999-06-30",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"WRB",
+        "name":"W. R. Berkley Corporation",
+        "date":"2019-12-05",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"WAB",
+        "name":"Westinghouse Air Brake Technologies Corp",
+        "date":"2019-02-27",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"WMT",
+        "name":"Walmart",
+        "date":"1982-08-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"WBA",
+        "name":"Walgreens Boots Alliance",
+        "date":"1979-12-31",
+        "sector":"Consumer Staples"
+    },
+    {
+        "ticket":"DIS",
+        "name":"The Walt Disney Company",
+        "date":"1976-06-30",
+        "sector":"Communication Services"
+    },
+    {
+        "ticket":"WM",
+        "name":"Waste Management Inc.",
+        "date":"",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"WAT",
+        "name":"Waters Corporation",
+        "date":"",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"WEC",
+        "name":"WEC Energy Group",
+        "date":"2008-10-31",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"WFC",
+        "name":"Wells Fargo",
+        "date":"1976-06-30",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"WELL",
+        "name":"Welltower Inc.",
+        "date":"2009-01-30",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"WST",
+        "name":"West Pharmaceutical Services",
+        "date":"2020-05-22",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"WDC",
+        "name":"Western Digital",
+        "date":"2009-07-01",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"WU",
+        "name":"Western Union Co",
+        "date":"2006-09-29",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"WRK",
+        "name":"WestRock",
+        "date":"",
+        "sector":"Materials"
+    },
+    {
+        "ticket":"WY",
+        "name":"Weyerhaeuser",
+        "date":"",
+        "sector":"Real Estate"
+    },
+    {
+        "ticket":"WHR",
+        "name":"Whirlpool Corp.",
+        "date":"",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"WMB",
+        "name":"Williams Companies",
+        "date":"1975-03-31",
+        "sector":"Energy"
+    },
+    {
+        "ticket":"WLTW",
+        "name":"Willis Towers Watson",
+        "date":"2016-01-05",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"WYNN",
+        "name":"Wynn Resorts Ltd",
+        "date":"2008-11-14",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"XEL",
+        "name":"Xcel Energy Inc",
+        "date":"1957-03-04",
+        "sector":"Utilities"
+    },
+    {
+        "ticket":"XRX",
+        "name":"Xerox",
+        "date":"",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"XLNX",
+        "name":"Xilinx",
+        "date":"1999-11-08",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"XYL",
+        "name":"Xylem Inc.",
+        "date":"2011-11-01",
+        "sector":"Industrials"
+    },
+    {
+        "ticket":"YUM",
+        "name":"Yum! Brands Inc",
+        "date":"1997-10-06",
+        "sector":"Consumer Discretionary"
+    },
+    {
+        "ticket":"ZBRA",
+        "name":"Zebra Technologies",
+        "date":"2019-12-23",
+        "sector":"Information Technology"
+    },
+    {
+        "ticket":"ZBH",
+        "name":"Zimmer Biomet",
+        "date":"2001-08-07",
+        "sector":"Health Care"
+    },
+    {
+        "ticket":"ZION",
+        "name":"Zions Bancorp",
+        "date":"2001-06-22",
+        "sector":"Financials"
+    },
+    {
+        "ticket":"ZTS",
+        "name":"Zoetis",
+        "date":"2013-06-21",
+        "sector":"Health Care"
+    }
+]

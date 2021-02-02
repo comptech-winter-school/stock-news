@@ -31,13 +31,12 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
       quotation - имя ценной бумаги
       keywords - из графа знаний по ключевому слову
       start_date, end_date - интервал, формат "год-месяц-день"
-      interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
-      num_records - сколько максимум записей взять за промежуток
-      (не реализовано) repeats - сколько раз должно повториться ключевое слово в статье
+      (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
+      (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
+      (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
     returns:
       DataFrame формата "Datetime (индекс), Ticker,
-        [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max]"
-      Ticker и есть ключевое слово
+        [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max]
     """
 
     df_res = None
@@ -53,16 +52,15 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
         f = Filters(
             start_date=start_date,
             end_date=end_date,
-            num_records=num_records,
             keyword=ft
         )
 
-        gd = GdeltDoc()
-        # Get a timeline of the number of articles matching the filters
         for timeline in match_list:
+            gd = GdeltDoc()
             timeline_data = gd.timeline_search(timeline, f)
             timeline_data = timeline_data.fillna(0)
             timeline_data = timeline_data.groupby(pd.Grouper(key="datetime", freq=interval.upper()))
+
             if timeline in ['timelinetone']:
                 timeline_data = timeline_data.mean()
             else:
@@ -79,13 +77,10 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
                 df_dub.index = timeline_data.index
 
     # Нужно создать колонки со средним, средним отклонением, минимумом и максимумом для каждой фичи
-    # Для начала нужно найти все колонки, для которых будем это считать
-    columns = df_dub.columns
-
     # Сначала сформируем список датафреймов, которые нам нужно достать для каждой колонки
     for pattern in col_names:
         pattern_list = list()
-        for col in columns:
+        for col in df_dub.columns:
             if pattern in col:
                 pattern_list.append(col)
 
@@ -97,27 +92,30 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
         df_res[f'{pattern}_std'] = df_dub[pattern_list].std(axis=1, skipna=True)
         df_res[f'{pattern}_sum'] = df_dub[pattern_list].sum(axis=1, skipna=True)
 
+    # Добавим название ценной бумаги в таблицу
     df_res.loc[:, 'Ticker'] = quotation
     return df_res
 
 
 def get_dataframe(**kwargs) -> pd.DataFrame:
     """ Получить полный датафрейм с источников
+        Пример использования: d = get_dataframe(quotation='NVDA',
+                                                keywords=['nvidia', 'geforce', 'geforce rtx', 'geForce now',
+                                                'nvidia rtx', 'nvidia shield', 'nvidia dgx'],
+                                                start_date="2020-01-01",
+                                                end_date="2020-12-31")
         params:
           quotation - имя ценной бумаги
           keywords - из графа знаний по ключевому слову
           start_date, end_date - интервал, формат "год-месяц-день"
-          interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
-          num_records - сколько максимум записей взять за промежуток
-          (не реализовано) repeats - сколько раз должно повториться ключевое слово в статье
+          (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
+          (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
+          (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
         returns:
           DataFrame формата "Datetime (индекс), Ticker,
             [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max], - из новостей
             Open, High, Low, Close, Adj Close, Volume - из финансов
     """
-    pattern = re.compile('^(19|20)\d\d[-](0[1-9]|1[012])[-](0[1-9]|[12][0-9]|3[01])$')
-    assert pattern.match(kwargs['start_date']) is None, "Дата старта в правильном формате имеет вид (гггг-мм-дд)"
-    assert pattern.match(kwargs['end_date']) is None, "Дата конца в правильном формате имеет вид (гггг-мм-дд)"
 
     gdelt_data = get_data_gdelt(**kwargs)
     yfinance_data = get_data_yfinance(quotation=kwargs['quotation'],

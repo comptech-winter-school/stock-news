@@ -1,18 +1,20 @@
 import yfinance as yf
 import pandas as pd
 from gdeltdoc import Filters, GdeltDoc
-import re
 
 
 def get_data_yfinance(quotation: str, start_date: str, end_date: str, interval='1d') -> pd.DataFrame:
-    """Взять данные с yahoo finance
-    params:
-      quotation: название котировки, данные для которой хотим получить
-      start_date, end_date - интервал, формат "год-месяц-день"
-      interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
-    returns:
-      DataFrame формата "Тикет, Время, 6 видов цен"
     """
+    Взять данные с yahoo finance
+
+    params:
+        quotation: название котировки, данные для которой хотим получить
+        start_date, end_date - интервал, формат "год-месяц-день"
+        interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
+    returns:
+        DataFrame формата "Тикет, Время, 6 видов цен"
+    """
+
     df_res = yf.download(tickers=quotation,
                          start=start_date,
                          end=end_date,
@@ -26,16 +28,18 @@ def get_data_yfinance(quotation: str, start_date: str, end_date: str, interval='
 
 def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: str, interval="1d", num_records=250,
                    repeats=3) -> pd.DataFrame:
-    """Взять данные с gdelt
+    """
+    Взять данные с gdelt
+
     params:
-      quotation - имя ценной бумаги
-      keywords - из графа знаний по ключевому слову
-      start_date, end_date - интервал, формат "год-месяц-день"
-      (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
-      (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
-      (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
+        quotation - имя ценной бумаги
+        keywords - из графа знаний по ключевому слову
+        start_date, end_date - интервал, формат "год-месяц-день"
+        (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
+        (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
+        (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
     returns:
-      DataFrame формата "Datetime (индекс), Ticker,
+        DataFrame формата "Datetime (индекс), Ticker,
         [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max]
     """
 
@@ -98,23 +102,25 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
 
 
 def get_dataframe(**kwargs) -> pd.DataFrame:
-    """ Получить полный датафрейм с источников
-        Пример использования: d = get_dataframe(quotation='NVDA',
-                                                keywords=['nvidia', 'geforce', 'geforce rtx', 'geForce now',
-                                                'nvidia rtx', 'nvidia shield', 'nvidia dgx'],
-                                                start_date="2020-01-01",
-                                                end_date="2020-12-31")
-        params:
-          quotation - имя ценной бумаги
-          keywords - из графа знаний по ключевому слову
-          start_date, end_date - интервал, формат "год-месяц-день"
-          (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
-          (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
-          (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
-        returns:
-          DataFrame формата "Datetime (индекс), Ticker,
-            [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max], - из новостей
-            Open, High, Low, Close, Adj Close, Volume - из финансов
+    """
+    Получить полный датафрейм с источников
+    Пример использования: d = get_dataframe(quotation='NVDA',
+                                            keywords=['nvidia', 'geforce', 'geforce rtx', 'geForce now',
+                                            'nvidia rtx', 'nvidia shield', 'nvidia dgx'],
+                                            start_date="2020-01-01",
+                                            end_date="2020-12-31")
+
+    params:
+        quotation - имя ценной бумаги
+        keywords - из графа знаний по ключевому слову
+        start_date, end_date - интервал, формат "год-месяц-день"
+        (опционально) interval - периодичность, формат "(номер)(первая буква слова (d, m, y))"
+        (не реализована) (опционально) num_records - сколько максимум записей взять за промежуток
+        (не реализовано) (опционально) repeats - сколько раз должно повториться ключевое слово в статье
+    returns:
+        DataFrame формата "Datetime (индекс), Ticker,
+        [Average_Tone, Article_Count, Volume_Intensity]_[std, mean, sum, min, max], - из новостей
+        Open, High, Low, Close, Adj Close, Volume - из финансов
     """
 
     gdelt_data = get_data_gdelt(**kwargs)
@@ -122,7 +128,10 @@ def get_dataframe(**kwargs) -> pd.DataFrame:
                                       start_date=kwargs['start_date'],
                                       end_date=kwargs['end_date'],
                                       interval="1d" if not kwargs.get('interval') else kwargs['interval'])
+
     res = pd.concat([gdelt_data, yfinance_data], axis=1)
+
     del gdelt_data
     del yfinance_data
+
     return res

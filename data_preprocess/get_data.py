@@ -53,35 +53,39 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
     match_list = ["timelinetone", "timelinevolraw", "timelinevol"]
     match_dict = dict(zip(match_list, col_names))
     for ft in keywords:
-        f = Filters(
-            start_date=start_date,
-            end_date=end_date,
-            keyword=ft
-        )
+        try:
+            f = Filters(
+                start_date=start_date,
+                end_date=end_date,
+                keyword=ft
+            )
 
-        for timeline in match_list:
-            gd = GdeltDoc()
-            timeline_data = gd.timeline_search(timeline, f)
-            import time
-            time.sleep(5)
-            timeline_data = timeline_data.fillna(0)
-            timeline_data = timeline_data.groupby(pd.Grouper(key="datetime", freq=interval.upper()))
+            for timeline in match_list:
+                gd = GdeltDoc()
+                timeline_data = gd.timeline_search(timeline, f)
+                import time
+                time.sleep(5)
+                timeline_data = timeline_data.fillna(0)
+                timeline_data = timeline_data.groupby(pd.Grouper(key="datetime", freq=interval.upper()))
 
-            if timeline in ['timelinetone']:
-                timeline_data = timeline_data.mean()
-            else:
-                timeline_data = timeline_data.sum()
+                if timeline in ['timelinetone']:
+                    timeline_data = timeline_data.mean()
+                else:
+                    timeline_data = timeline_data.sum()
 
-            # Собираем все фичи в один датафрейм, далее их разделим
-            col_name = match_dict[timeline]
-            df_dub[f"{ft}_{timeline}_{col_name}"] = timeline_data[col_name.replace('_', ' ')].values
+                # Собираем все фичи в один датафрейм, далее их разделим
+                col_name = match_dict[timeline]
+                df_dub[f"{ft}_{timeline}_{col_name}"] = timeline_data[col_name.replace('_', ' ')].values
 
-            # Так как мы копируем только колонки, то надо один раз откопировать дату в итог
-            if df_res is None:
-                # Так же выровняем индексы, чтобы при копировании не выдавалось NaN
-                df_res = pd.DataFrame(index=timeline_data.index)
-                df_dub.index = timeline_data.index
-
+                # Так как мы копируем только колонки, то надо один раз откопировать дату в итог
+                if df_res is None:
+                    # Так же выровняем индексы, чтобы при копировании не выдавалось NaN
+                    df_res = pd.DataFrame(index=timeline_data.index)
+                    df_dub.index = timeline_data.index
+            
+            print('TICKER:', quotation, 'KEY:', ft)
+        except Exception as e: 
+            print('ERROR!', e, 'TICKER:', quotation, 'KEY:', ft)
     # Нужно создать колонки со средним, средним отклонением, минимумом и максимумом для каждой фичи
     # Сначала сформируем список датафреймов, которые нам нужно достать для каждой колонки
     for pattern in col_names:

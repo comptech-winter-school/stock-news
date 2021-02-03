@@ -62,6 +62,8 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
         for timeline in match_list:
             gd = GdeltDoc()
             timeline_data = gd.timeline_search(timeline, f)
+            import time
+            time.sleep(5)
             timeline_data = timeline_data.fillna(0)
             timeline_data = timeline_data.groupby(pd.Grouper(key="datetime", freq=interval.upper()))
 

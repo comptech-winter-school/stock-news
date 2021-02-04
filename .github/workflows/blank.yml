@@ -26,7 +26,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           # Command to execute on the remote server.
-          script: whoami
+          script: bash need_make
           # Hostname or IP address of the server.
           host: ${{ secrets.HOST }}
           # Username for authentication.

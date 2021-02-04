@@ -18,11 +18,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      #- name: Run Checkout
-       # uses: actions/checkout@master
+      - name: Run Checkout
+        uses: actions/checkout@master
         
-      - name: cat check
-        run: cat LICENSE
+        # Заполнить env файл через jinja
+        # Передать его на сервер
+        # Запустить скрипт на сервере, который стянет репозиторий, поставить venv и обновить зависимости 
         
       - name: Run SSH command
         # You may pin to the exact commit or the version.

@@ -1,6 +1,6 @@
 name: CI
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -32,3 +32,4 @@ jobs:
           # Username for authentication.
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}
+          # File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)

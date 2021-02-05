@@ -11,8 +11,8 @@ RUN ln -snf "/usr/share/zoneinfo/${TZ}" /etc/localtime && \
 WORKDIR /opt/project
 
 # Устанавливаем пакеты Python
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY ./backend/requirements.dev.txt .
+RUN pip install --no-cache-dir -r requirements.dev.txt
 
 # Копируем папку с приложением
 COPY app app

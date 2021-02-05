@@ -59,3 +59,16 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           source: "./.github/workflows"
           target: "~/stock-news"
+          
+  deploy:
+    needs: [create_envs]
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Run deploy
+        uses: appleboy/ssh-action@master
+        with:
+          script: bash server.sh
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}

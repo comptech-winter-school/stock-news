@@ -3,7 +3,7 @@ version: '3'
 services:
   backend:
     container_name: backend
-    image: hub.docker.com/repository/docker/stocknews/stock-news:backend
+    image: https://hub.docker.com/repository/docker/stocknews/stock-news:backend
     command: python /app/backend/server.py
     env_file:
       - sample.env

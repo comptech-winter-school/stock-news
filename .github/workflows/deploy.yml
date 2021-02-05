@@ -5,12 +5,40 @@ on:
     branches: [ main ]
 
 jobs:
+  build_docker_backend:
+    runs-on: ubuntu-latest
+    env:
+      LOGIN: ${{ secrets.DOCKER_LOGIN }}
+      NAME: ${{ secrets.DOCKER_NAME }}
+    steps:
+      - name: Login to docker.io
+        run: echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
+      - uses: actions/checkout@master
+      - name: Build image
+        run: docker build -t $LOGIN/$NAME:backend -f ./backend/Dockerfile .
+      - name: Push image to docker.io
+        run: docker push $LOGIN/$NAME:backend
+        
+  build_docker_mle:
+    runs-on: ubuntu-latest
+    env:
+      LOGIN: ${{ secrets.DOCKER_LOGIN }}
+      NAME: ${{ secrets.DOCKER_NAME }}
+    steps:
+      - name: Login to docker.io
+        run: echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
+      - uses: actions/checkout@master
+      - name: Build image
+        run: docker build -t $LOGIN/$NAME:mle -f ./data_preprocess/Dockerfile .
+      - name: Push image to docker.io
+        run: docker push $LOGIN/$NAME:mle
+        
   create_envs:
     needs: [build_docker_backend, build_docker_mle]
     runs-on: ubuntu-latest
 
     steps:
-        # Заполнить env файл через jinja
+      # Заполнить env файл через jinja
       - name: Create venv file
         uses: cuchi/jinja2-action@v1.2.0
         with:
@@ -19,8 +47,8 @@ jobs:
         env:
           URL: ${{ secrets.get('URL') }}
           API_KEY: ${{ secrets.get('API_KEY') }}
-          
-        # Передаем файлы на сервер
+            
+          # Передаем файлы на сервер
       - name: Send file on server
         uses: appleboy/scp-action@master
         with:

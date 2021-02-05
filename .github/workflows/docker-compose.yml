@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  backend:
+  backend_:
     container_name: backend__1
     image: stocknews/stock-news:backend__1
     command: python /app/backend/server.py
@@ -13,7 +13,7 @@ services:
       - 8.8.8.8
       - 1.0.0.1
 
-  mle:
+  mle_:
     container_name: mle__1
     image: stocknews/stock-news:mle__1
     command: python /app/data_preprocess/upload_data2mongo.py

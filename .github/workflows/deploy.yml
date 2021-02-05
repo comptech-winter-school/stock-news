@@ -38,7 +38,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Заполнить env файл через jinja
+      - name: Run Checkout
+        uses: actions/checkout@master
+        
       - name: Create venv file
         uses: cuchi/jinja2-action@v1.2.0
         with:

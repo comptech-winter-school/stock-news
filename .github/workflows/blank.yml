@@ -22,8 +22,18 @@ jobs:
         uses: actions/checkout@master
         
         # Заполнить env файл через jinja
+      - name: Create venv file
+        uses: cuchi/jinja2-action@v1.2.0
+        with:
+          template: ./.github/workflows/sample.env.j2
+          output_file: ./.github/workflows/sample.env
+        env:
+          HOST: ${{ secrets.USERNAME }}
         # Передать его на сервер
         # Запустить скрипт на сервере, который стянет репозиторий, поставить venv и обновить зависимости 
+        
+      - name: Check env file
+        run: cat ./.github/workflows/sample.env
         
       - name: Run SSH command
         # You may pin to the exact commit or the version.

@@ -29,12 +29,18 @@ jobs:
           output_file: ./.github/workflows/sample.env
         env:
           HOST: ${{ secrets.USERNAME }}
+          
         # Передать его на сервер
+      - name: Send file on server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}
+          source: "./.github/workflows/sample.env"
+          target: ""
+          
         # Запустить скрипт на сервере, который стянет репозиторий, поставить venv и обновить зависимости 
-        
-      - name: Check env file
-        run: cat ./.github/workflows/sample.env
-        
       - name: Run SSH command
         # You may pin to the exact commit or the version.
         # uses: garygrossgarten/github-action-ssh@d2ce399984eed21f8cf2a26d28ba309e1ed52fc5

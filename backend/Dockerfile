@@ -8,22 +8,11 @@ RUN ln -snf "/usr/share/zoneinfo/${TZ}" /etc/localtime && \
     apt-get install --no-install-recommends -y tzdata default-libmysqlclient-dev && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
-WORKDIR /opt/project
+#WORKDIR /opt/project
 
-# Устанавливаем пакеты Python
-COPY ./backend/requirements.dev.txt .
-RUN pip install --no-cache-dir -r requirements.dev.txt
+# Копируем все файлы из текущей директории в /app контейнера
+COPY ./ /app
+# Устанавливаем все зависимости
+RUN apk update && pip install -r /app/backend/requirements.dev.txt --no-cache-dir
 
-# Копируем папку с приложением
-COPY app app
-COPY server.py server.py
-
-# Создаем папку с логами
-RUN mkdir logs
-
-# Копируем файлы конфигураций
-RUN mkdir config
-COPY config/app.yaml config/app.yaml
-RUN touch ./.env
-
-CMD ["python", "server.py"]
+CMD ["python", "/app/backend/server.py"]

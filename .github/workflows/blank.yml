@@ -37,7 +37,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}
-          source: "./.github/workflows/sample.env"
+          source: "sample.env"
           target: "test"
           
         # Запустить скрипт на сервере, который стянет репозиторий, поставить venv и обновить зависимости 

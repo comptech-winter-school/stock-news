@@ -45,8 +45,8 @@ jobs:
           template: ./.github/workflows/sample.env.j2
           output_file: ./.github/workflows/sample.env
         env:
-          URL: ${{ secrets.get('URL') }}
-          API_KEY: ${{ secrets.get('API_KEY') }}
+          URL: ${{ secrets.get('HOST') }}
+          #API_KEY: ${{ secrets.get('API_KEY') }}
             
           # Передаем файлы на сервер
       - name: Send file on server

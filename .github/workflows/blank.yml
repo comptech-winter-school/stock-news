@@ -19,9 +19,9 @@ jobs:
         with:
           template: ./.github/workflows/sample.env.j2
           output_file: ./.github/workflows/sample.env
-        env:
-          URL: ${{ secrets['URL'] }}
-          API_KEY: ${{ secrets['API_KEY'] }}
+        #env:
+          #URL: ${{ secrets['URL'] }}
+          #API_KEY: ${{ secrets['API_KEY'] }}
           
         # Передать его на сервер
       - name: Send file on server
@@ -31,13 +31,13 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}
           source: "./.github/workflows/sample.env"
-          target: "./opt/stock-news"
+          target: "~/stock-news"
           
         # Запустить скрипт на сервере, который стянет репозиторий, поставить venv и обновить зависимости 
       - name: Run SSH command
         uses: appleboy/ssh-action@master
         with:
-          script: whoami
+          script: bash server.sh
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}

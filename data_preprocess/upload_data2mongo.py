@@ -268,7 +268,7 @@ def get_keywords_full(path):
 def parse_dataframes_to_mongo(data_json, features):
     env.read_envfile()
     url = env("URL")
-    ssl_ca_certs = str(Path('/app/additional/YandexInternalRootCA.crt'))
+    ssl_ca_certs = str(Path('YandexInternalRootCA.crt'))
     client = pym.MongoClient(url,
                              ssl_ca_certs=ssl_ca_certs,
                              ssl_cert_reqs=ssl.CERT_REQUIRED)

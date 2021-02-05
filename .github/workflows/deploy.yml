@@ -15,9 +15,9 @@ jobs:
         run: echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
       - uses: actions/checkout@master
       - name: Build image
-        run: docker build -t $LOGIN/$NAME:backend__ -f ./backend/Dockerfile .
+        run: docker build -t $LOGIN/$NAME:_backend__ -f ./backend/Dockerfile .
       - name: Push image to docker.io
-        run: docker push $LOGIN/$NAME:backend__
+        run: docker push $LOGIN/$NAME:_backend__
         
   build_docker_mle:
     runs-on: ubuntu-latest
@@ -29,9 +29,9 @@ jobs:
         run: echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
       - uses: actions/checkout@master
       - name: Build image
-        run: docker build -t $LOGIN/$NAME:mle__ -f ./data_preprocess/Dockerfile .
+        run: docker build -t $LOGIN/$NAME:_mle__ -f ./data_preprocess/Dockerfile .
       - name: Push image to docker.io
-        run: docker push $LOGIN/$NAME:mle__
+        run: docker push $LOGIN/$NAME:_mle__
         
   create_envs:
     needs: [build_docker_backend, build_docker_mle]

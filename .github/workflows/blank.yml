@@ -47,7 +47,7 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           # Command to execute on the remote server.
-          script: whoami
+          script: cat ./test/sample.env
           # Hostname or IP address of the server.
           host: ${{ secrets.HOST }}
           # Username for authentication.

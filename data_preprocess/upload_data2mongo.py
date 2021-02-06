@@ -1,8 +1,10 @@
 import json
+import random
 import ssl
 import time
 import urllib
 from datetime import timedelta
+from pathlib import Path
 
 import pandas as pd
 import pymongo as pym
@@ -10,7 +12,10 @@ import yfinance as yf
 from envparse import env
 from gdeltdoc import Filters, GdeltDoc
 
-from consts import ADDITIONAL_DIR
+
+ROOT_DIR = Path(__file__).parent.parent
+DATA_DIR = ROOT_DIR / 'data'
+ADDITIONAL_DIR = ROOT_DIR / 'additional'
 
 
 def get_shift_percentage(numerator: pd.Series,
@@ -282,6 +287,9 @@ def parse_dataframes_to_mongo(data_json, ssl_path=None):
     # db_gdelt.drop()
     # db_yfinance.drop()
 
+    calendar_tickers = pd.read_csv(DATA_DIR / 'calendar.csv')
+    calendar_tickers_unique = calendar_tickers['Ticker'].unique()
+
     #     db_gdelt.create_index([("datetime", pym.ASCENDING),("Ticker", pym.ASCENDING)], unique=True)
     #     db_yfinance.create_index([("Date", pym.ASCENDING),("Ticker", pym.ASCENDING)], unique=True)
 
@@ -289,21 +297,26 @@ def parse_dataframes_to_mongo(data_json, ssl_path=None):
         data = json.load(json_file)
 
         # for i in range(len(data)):
-        import random
-        for i in random.sample(range(1, len(data)), 40):
-            try:
-                print('TICKER:', data[i]['ticket'])
-                keywords = db_keywords.find_one({"Ticker": data[i]['ticket']}, {'_id': 0})['Keywords']
-                print('PARSED KEYWORDS', keywords)
-                df_gdelt, df_yfinance = get_dataframe_v2(quotation=data[i]['ticket'],
-                                                         keywords=keywords,
-                                                         start_date="2017-01-01",
-                                                         end_date="2020-12-31")
+    for i in random.sample(range(1, len(calendar_tickers_unique)), 40):
+        try:
+            ticker = calendar_tickers_unique[i]
 
-                db_gdelt.insert_many(df_gdelt.to_dict('records'))
-                db_yfinance.insert_many(df_yfinance.to_dict('records'))
-            except Exception as e:
-                print('ERROR!', e)
+            if db_yfinance.find_one({"Ticker": ticker}):
+                continue
+
+            print('TICKER:', ticker)
+            keywords = db_keywords.find_one({"Ticker": ticker}, {'_id': 0})['Keywords']
+
+            print('PARSED KEYWORDS', keywords)
+            df_gdelt, df_yfinance = get_dataframe_v2(quotation=ticker,
+                                                     keywords=keywords,
+                                                     start_date="2017-01-01",
+                                                     end_date="2020-12-31")
+
+            db_gdelt.insert_many(df_gdelt.to_dict('records'))
+            db_yfinance.insert_many(df_yfinance.to_dict('records'))
+        except Exception as e:
+            print('ERROR!', e)
 
 
 def main():

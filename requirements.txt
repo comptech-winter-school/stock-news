@@ -43,6 +43,7 @@ jupyterlab-widgets==1.0.0  # via ipywidgets
 lxml==4.6.2               # via yfinance
 markupsafe==1.1.1         # via jinja2
 mistune==0.8.4            # via nbconvert
+motor==2.3.1              # via -r ./backend/requirements.in
 multitasking==0.0.9       # via yfinance
 nbclient==0.5.1           # via nbconvert
 nbconvert==6.0.7          # via notebook
@@ -66,7 +67,7 @@ pycparser==2.20           # via cffi
 pydantic==1.7.3           # via fastapi
 pydeck==0.5.0             # via streamlit
 pygments==2.7.4           # via ipython, jupyterlab-pygments, nbconvert
-pymongo==3.11.3           # via -r ./data_preprocess/requirements.in
+pymongo==3.11.3           # via -r ./data_preprocess/requirements.in, motor
 pyparsing==2.4.7          # via packaging
 pyrsistent==0.17.3        # via jsonschema
 python-dateutil==2.8.1    # via jupyter-client, pandas, streamlit

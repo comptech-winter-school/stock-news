@@ -2,3 +2,5 @@ uvicorn
 envparse
 pyyaml
 fastapi
+motor
+

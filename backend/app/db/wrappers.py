@@ -1,3 +1,5 @@
+import ssl
+
 class ClickHouse:
     @staticmethod
     def read_settings_async():
@@ -112,14 +114,14 @@ class MongoDB:
     async def init_async(config):
         import motor.motor_asyncio as aiomotor
 
-        conn = aiomotor.AsyncIOMotorClient(config["connection_string"])
+        conn = aiomotor.AsyncIOMotorClient(
+            config["connection_string"],
+            ssl_ca_certs="../additional/YandexInternalRootCA.crt",
+            ssl_cert_reqs=ssl.CERT_REQUIRED
+        )
         db = conn[config["db"]]
-
-        connect = {
-            "client": db
-        }
-        return connect
+        return db
 
     @staticmethod
     async def close_async(connect):
-        connect['client'].client.close()
+        connect.client.close()

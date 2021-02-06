@@ -74,7 +74,7 @@ jobs:
           target: "~/stock-news"
 
   deploy:
-    needs: [ build_docker_backend, build_docker_mle, create_envs ]
+    needs: [ build_docker_backend, build_docker_mle, build_docker_frontend,  create_envs ]
     runs-on: ubuntu-latest
 
     steps:

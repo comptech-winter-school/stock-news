@@ -15,6 +15,7 @@ jobs:
        with:
          script: |
            cd ./stock-news/.github/workflows
+           sudo docker-compose pull
            sudo docker-compose up --build -d worker_mle
          host: ${{ secrets.HOST }}
          username: ${{ secrets.USERNAME }}

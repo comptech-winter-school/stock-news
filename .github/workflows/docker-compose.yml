@@ -16,7 +16,7 @@ services:
   worker_mle:
     container_name: mle
     image: stocknews/stock-news:mle
-    command: "cd /app & python3 ./data_preprocess/upload_data2mongo.py"
+    command: "cd app & python3 ./data_preprocess/upload_data2mongo.py"
     env_file:
       - sample.env
     dns:

@@ -45,7 +45,7 @@ jobs:
       - name: Build image
         run: docker build -t $LOGIN/$NAME:frontend -f ./frontend/Dockerfile .
       - name: Push image to docker.io
-        run: docker push $LOGIN/$NAME:mle
+        run: docker push $LOGIN/$NAME:frontend
 
   create_envs:
     runs-on: ubuntu-latest

@@ -1,5 +1,7 @@
 FROM python:3.8
 
+WORKDIR /app/backend
+
 # Setting Moscow time-zone
 ENV TZ=Europe/Moscow
 # hadolint ignore=DL3008

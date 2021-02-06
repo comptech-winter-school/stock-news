@@ -69,7 +69,7 @@ jobs:
         with:
           script: |
             cd ./stock-news/.github/workflows
-            sudo docker-compose down
+            sudo docker-compose down service_backend
             sudo docker-compose pull
             sudo docker-compose up --build -d service_backend
           host: ${{ secrets.HOST }}
@@ -81,7 +81,7 @@ jobs:
 #        with:
 #          script: |
 #            cd ./stock-news/.github/workflows
-#            sudo docker-compose down
+#            sudo docker-compose down worker_mle
 #            sudo docker-compose pull
 #            sudo docker-compose up --build -d worker_mle
 #          host: ${{ secrets.HOST }}

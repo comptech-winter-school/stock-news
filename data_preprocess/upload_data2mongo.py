@@ -296,9 +296,9 @@ def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
                 db_gdelt.insert_many(df_gdelt.to_dict('records'))
                 db_yfinance.insert_many(df_yfinance.to_dict('records'))
 
+                print('TICKER:', data[i]['ticket'])
             except Exception as e:
-                continue
-                # print('ERROR!', e, 'TICKER:', data[i]['ticket'], 'KEY:', key)
+                print('ERROR!', e, 'TICKER:', data[i]['ticket'])
 
 
 def main():

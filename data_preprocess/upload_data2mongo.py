@@ -290,7 +290,7 @@ def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
             try:
                 df_gdelt, df_yfinance = get_dataframe_v2(quotation=data[i]['ticket'],
                                                          keywords=features[i],
-                                                         start_date="2016-01-01",
+                                                         start_date="2017-01-01",
                                                          end_date="2020-12-31")
 
                 db_gdelt.insert_many(df_gdelt.to_dict('records'))

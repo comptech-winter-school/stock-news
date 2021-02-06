@@ -16,11 +16,11 @@ services:
   service_frontend:
     container_name: frontend
     image: stocknews/stock-news:frontend
-    command: "python3 streamlit_app.py"
+    command: ["streamlit", "run", "streamlit_app.py", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
     env_file:
       - sample.env
     ports:
-      - "8080:8080"
+      - "8080:8501"
     dns:
       - 8.8.8.8
       - 1.0.0.1

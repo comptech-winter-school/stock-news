@@ -279,15 +279,18 @@ def parse_dataframes_to_mongo(data_json, ssl_path=None):
     db_yfinance = db['YFINANCE']
     db_keywords = db['KEYWORDS']
 
-    db_gdelt.drop()
-    db_yfinance.drop()
+    # db_gdelt.drop()
+    # db_yfinance.drop()
 
     #     db_gdelt.create_index([("datetime", pym.ASCENDING),("Ticker", pym.ASCENDING)], unique=True)
     #     db_yfinance.create_index([("Date", pym.ASCENDING),("Ticker", pym.ASCENDING)], unique=True)
 
     with open(data_json) as json_file:
         data = json.load(json_file)
-        for i in range(len(data)):
+
+        # for i in range(len(data)):
+        import random
+        for i in random.sample(range(1, len(data)), 40):
             try:
                 print('TICKER:', data[i]['ticket'])
                 keywords = db_keywords.find_one({"Ticker": data[i]['ticket']}, {'_id': 0})['Keywords']

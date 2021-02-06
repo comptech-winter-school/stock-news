@@ -18,7 +18,7 @@ jobs:
         run: docker build -t $LOGIN/$NAME:backend -f ./backend/Dockerfile .
       - name: Push image to docker.io
         run: docker push $LOGIN/$NAME:backend
-        
+
   build_docker_mle:
     runs-on: ubuntu-latest
     env:
@@ -32,14 +32,14 @@ jobs:
         run: docker build -t $LOGIN/$NAME:mle -f ./data_preprocess/Dockerfile .
       - name: Push image to docker.io
         run: docker push $LOGIN/$NAME:mle
-        
+
   create_envs:
     runs-on: ubuntu-latest
 
     steps:
       - name: Run Checkout
         uses: actions/checkout@master
-        
+
       - name: Create venv file
         uses: cuchi/jinja2-action@v1.2.0
         with:
@@ -48,7 +48,7 @@ jobs:
         env:
           URL: ${{ secrets['URL'] }}
           API_KEY: ${{ secrets['API_KEY'] }}
-            
+
           # Передаем файлы на сервер
       - name: Send file on server
         uses: appleboy/scp-action@master
@@ -58,16 +58,30 @@ jobs:
           key: ${{ secrets.PRIVATEKEY }}
           source: "./.github/workflows"
           target: "~/stock-news"
-          
+
   deploy:
-    needs: [build_docker_backend, build_docker_mle, create_envs]
+    needs: [ build_docker_backend, build_docker_mle, create_envs ]
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Run deploy
+      - name: Run backend deploy
         uses: appleboy/ssh-action@master
         with:
-          script: bash server.sh
+          script: |
+            cd ./stock-news/.github/workflows
+            sudo docker-compose down
+            sudo docker-compose up --build -d service_backend
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}
+
+      - name: Run mle worker deploy (upload data 2 mongo)
+        uses: appleboy/ssh-action@master
+        with:
+          script: |
+            cd ./stock-news/.github/workflows
+            sudo docker-compose down
+            sudo docker-compose up --build -d worker_mle
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}

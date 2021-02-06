@@ -1,10 +1,10 @@
 version: '3'
 
 services:
-  service_1:
+  service_backend:
     container_name: backend
     image: stocknews/stock-news:backend
-    command: python /app/backend/server.py
+    command: "python3 /app/backend/server.py"
     env_file:
       - sample.env
     ports:
@@ -13,14 +13,12 @@ services:
       - 8.8.8.8
       - 1.0.0.1
 
-  service_2:
+  worker_mle:
     container_name: mle
     image: stocknews/stock-news:mle
-    command: python /app/data_preprocess/upload_data2mongo.py
+    command: "python3 /app/data_preprocess/upload_data2mongo.py"
     env_file:
       - sample.env
-    ports:
-      - "8081:8081"
     dns:
       - 8.8.8.8
       - 1.0.0.1

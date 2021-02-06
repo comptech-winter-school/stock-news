@@ -4,7 +4,7 @@ services:
   service_backend:
     container_name: backend
     image: stocknews/stock-news:backend
-    command: "cd ./backend & python3 server.py"
+    command: "python3 server.py"
     env_file:
       - sample.env
     ports:

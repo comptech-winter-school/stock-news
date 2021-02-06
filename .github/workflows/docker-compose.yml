@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  backend_:
-    container_name: backend__2
-    image: stocknews/stock-news:backend__2
+  service_1:
+    container_name: backend
+    image: stocknews/stock-news:backend
     command: python /app/backend/server.py
     env_file:
       - sample.env
@@ -13,9 +13,9 @@ services:
       - 8.8.8.8
       - 1.0.0.1
 
-  mle_:
-    container_name: mle__2
-    image: stocknews/stock-news:mle__2
+  service_2:
+    container_name: mle
+    image: stocknews/stock-news:mle
     command: python /app/data_preprocess/upload_data2mongo.py
     env_file:
       - sample.env

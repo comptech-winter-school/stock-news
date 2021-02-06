@@ -1,0 +1,21 @@
+on: 
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'ткни зеленую кнопку для залива данных в бд'     
+        required: true
+        default: 'помни - оно снесет уже имеющиеся данные'
+        
+  jobs:
+    printInputs:
+      runs-on: ubuntu-latest
+      steps:
+       - name: Run mle worker deploy (upload data 2 mongo)
+         uses: appleboy/ssh-action@master
+         with:
+           script: |
+             cd ./stock-news/.github/workflows
+             sudo docker-compose up --build -d worker_mle
+           host: ${{ secrets.HOST }}
+           username: ${{ secrets.USERNAME }}
+           key: ${{ secrets.PRIVATEKEY }}

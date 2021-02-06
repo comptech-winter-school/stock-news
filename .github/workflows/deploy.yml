@@ -33,6 +33,20 @@ jobs:
       - name: Push image to docker.io
         run: docker push $LOGIN/$NAME:mle
 
+  build_docker_frontend:
+    runs-on: ubuntu-latest
+    env:
+      LOGIN: ${{ secrets.DOCKER_LOGIN }}
+      NAME: ${{ secrets.DOCKER_NAME }}
+    steps:
+      - name: Login to docker.io
+        run: echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_LOGIN }} --password-stdin
+      - uses: actions/checkout@master
+      - name: Build image
+        run: docker build -t $LOGIN/$NAME:frontend -f ./frontend/Dockerfile .
+      - name: Push image to docker.io
+        run: docker push $LOGIN/$NAME:mle
+
   create_envs:
     runs-on: ubuntu-latest
 
@@ -72,6 +86,18 @@ jobs:
             sudo docker-compose down service_backend
             sudo docker-compose pull
             sudo docker-compose up --build -d service_backend
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.PRIVATEKEY }}
+
+      - name: Run frontend deploy
+        uses: appleboy/ssh-action@master
+        with:
+          script: |
+            cd ./stock-news/.github/workflows
+            sudo docker-compose down service_frontend
+            sudo docker-compose pull
+            sudo docker-compose up --build -d service_frontend
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PRIVATEKEY }}

@@ -13,6 +13,18 @@ services:
       - 8.8.8.8
       - 1.0.0.1
 
+  service_frontend:
+    container_name: frontend
+    image: stocknews/stock-news:frontend
+    command: "python3 streamlit_app.py"
+    env_file:
+      - sample.env
+    ports:
+      - "8080:8080"
+    dns:
+      - 8.8.8.8
+      - 1.0.0.1
+
   worker_mle:
     container_name: mle
     image: stocknews/stock-news:mle

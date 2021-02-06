@@ -1,5 +1,5 @@
-import yfinance as yf
 import pandas as pd
+import yfinance as yf
 from gdeltdoc import Filters, GdeltDoc
 
 
@@ -82,9 +82,9 @@ def get_data_gdelt(quotation: str, keywords: list, start_date: str, end_date: st
                     # Так же выровняем индексы, чтобы при копировании не выдавалось NaN
                     df_res = pd.DataFrame(index=timeline_data.index)
                     df_dub.index = timeline_data.index
-            
+
             print('TICKER:', quotation, 'KEY:', ft)
-        except Exception as e: 
+        except Exception as e:
             print('ERROR!', e, 'TICKER:', quotation, 'KEY:', ft)
     # Нужно создать колонки со средним, средним отклонением, минимумом и максимумом для каждой фичи
     # Сначала сформируем список датафреймов, которые нам нужно достать для каждой колонки

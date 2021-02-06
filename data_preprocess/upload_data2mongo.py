@@ -1,13 +1,16 @@
-import yfinance as yf
-import pandas as pd
-import pymongo as pym
+import json
+import ssl
 import time
 import urllib
-import json
-from envparse import env
-from pathlib import Path
-from gdeltdoc import Filters, GdeltDoc
 from datetime import timedelta
+
+import pandas as pd
+import pymongo as pym
+import yfinance as yf
+from envparse import env
+from gdeltdoc import Filters, GdeltDoc
+
+from utils.consts import ADDITIONAL_DIR
 
 
 def get_shift_percentage(numerator: pd.Series,
@@ -265,12 +268,11 @@ def get_keywords_full(path):
     return keywords
 
 
-def parse_dataframes_to_mongo(data_json, features):
+def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
     env.read_envfile()
     url = env("URL")
-    ssl_ca_certs = str(Path('YandexInternalRootCA.crt'))
     client = pym.MongoClient(url,
-                             ssl_ca_certs=ssl_ca_certs,
+                             ssl_ca_certs=ssl_path,
                              ssl_cert_reqs=ssl.CERT_REQUIRED)
     db = client['stock-news-backend']
     db_gdelt = db['GDELT']
@@ -299,5 +301,12 @@ def parse_dataframes_to_mongo(data_json, features):
                 # print('ERROR!', e, 'TICKER:', data[i]['ticket'], 'KEY:', key)
 
 
-keywords = get_keywords_full(str(Path('././YandexInternalRootCA.crt')))
-parse_dataframes_to_mongo(str(Path('././stocks.json')), keywords)
+def main():
+    ssl_path = str(ADDITIONAL_DIR / 'YandexInternalRootCA.crt')
+    json_path = str(ADDITIONAL_DIR / 'stocks.json')
+    keywords = get_keywords_full(json_path)
+    parse_dataframes_to_mongo(json_path, keywords, ssl_path=ssl_path)
+
+
+if __name__ == '__main__':
+    main()

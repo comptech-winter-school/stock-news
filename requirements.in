@@ -1,2 +1,3 @@
 -r ./data_preprocess/requirements.in
 -r ./backend/requirements.in
+-r ./frontend/requirements.in

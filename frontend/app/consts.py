@@ -1,0 +1,1 @@
+BACKEND_URL = "https://stock-news.site/backend"

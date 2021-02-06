@@ -70,6 +70,7 @@ jobs:
           script: |
             cd ./stock-news/.github/workflows
             sudo docker-compose down
+            sudo docker-compose pull
             sudo docker-compose up --build -d service_backend
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -81,6 +82,7 @@ jobs:
           script: |
             cd ./stock-news/.github/workflows
             sudo docker-compose down
+            sudo docker-compose pull
             sudo docker-compose up --build -d worker_mle
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}

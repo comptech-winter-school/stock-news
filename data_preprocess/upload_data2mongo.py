@@ -10,7 +10,7 @@ import yfinance as yf
 from envparse import env
 from gdeltdoc import Filters, GdeltDoc
 
-from utils.consts import ADDITIONAL_DIR
+from consts import ADDITIONAL_DIR
 
 
 def get_shift_percentage(numerator: pd.Series,

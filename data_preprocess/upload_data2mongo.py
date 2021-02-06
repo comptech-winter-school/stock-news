@@ -268,7 +268,7 @@ def get_keywords_full(path):
     return keywords
 
 
-def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
+def parse_dataframes_to_mongo(data_json, ssl_path=None):
     env.read_envfile()
     url = env("URL")
     client = pym.MongoClient(url,
@@ -277,6 +277,7 @@ def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
     db = client['stock-news-backend']
     db_gdelt = db['GDELT']
     db_yfinance = db['YFINANCE']
+    db_keywords = db['KEYWORDS']
 
     db_gdelt.drop()
     db_yfinance.drop()
@@ -288,24 +289,25 @@ def parse_dataframes_to_mongo(data_json, features, ssl_path=None):
         data = json.load(json_file)
         for i in range(len(data)):
             try:
+                print('TICKER:', data[i]['ticket'])
+                keywords = db_keywords.find_one({"Ticker": data[i]['ticket']}, {'_id': 0})['Keywords']
+                print('PARSED KEYWORDS', keywords)
                 df_gdelt, df_yfinance = get_dataframe_v2(quotation=data[i]['ticket'],
-                                                         keywords=features[i],
+                                                         keywords=keywords,
                                                          start_date="2017-01-01",
                                                          end_date="2020-12-31")
 
                 db_gdelt.insert_many(df_gdelt.to_dict('records'))
                 db_yfinance.insert_many(df_yfinance.to_dict('records'))
-
-                print('TICKER:', data[i]['ticket'])
             except Exception as e:
-                print('ERROR!', e, 'TICKER:', data[i]['ticket'])
+                print('ERROR!', e)
 
 
 def main():
     ssl_path = str(ADDITIONAL_DIR / 'YandexInternalRootCA.crt')
     json_path = str(ADDITIONAL_DIR / 'stocks.json')
-    keywords = get_keywords_full(json_path)
-    parse_dataframes_to_mongo(json_path, keywords, ssl_path=ssl_path)
+    # keywords = get_keywords_full(json_path)
+    parse_dataframes_to_mongo(json_path, ssl_path=ssl_path)
 
 
 if __name__ == '__main__':

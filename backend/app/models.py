@@ -33,6 +33,9 @@ class GetLevelMongo(BaseModel):
     target: int
     date: str
     days_back: int
+    Ticker: str
+    company_name: str
+    wiki_info: str = None
 
 
 class GetLevelResponse(BaseModel):
@@ -43,6 +46,9 @@ class GetLevelResponse(BaseModel):
     news: List[Tuple[str, str]]
     model_predict: int
     target: int
+    Ticker: str
+    company_name: str
+    wiki_info: str = None
 
 
 def main():

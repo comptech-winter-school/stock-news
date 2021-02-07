@@ -11,3 +11,6 @@ class Level(BaseModel):
     news: List[Tuple[str, str]]
     model_predict: int
     target: int
+    Ticker: str
+    company_name: str
+    wiki_info: str = None

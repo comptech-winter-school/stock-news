@@ -44,7 +44,7 @@ def get_level(level_id: int, model_id: str) -> Level:
 
 def plot_level(level: Level):
     df = pd.DataFrame()
-    # df['dates'] = level.dates[]
+    df['dates'] = pd.Series(level.dates)
     df['tones'] = pd.Series(level.tones)
     df['prices'] = pd.Series(level.prices)
     df['volumes'] = pd.Series(level.volumes)
@@ -64,11 +64,26 @@ def plot_level(level: Level):
                 # scale=alt.Scale(),
                 title='Цена закрытия'
                 ),
-        tooltip=[alt.Tooltip('tones:Q', title='Тональность за день', format='.4f'),
-                 alt.Tooltip('volumes:Q', title='Процент статей (x100)', format='.4f')]
+        tooltip=[
+            # alt.Tooltip('tones:Q', title='Тональность за день', format='.4f'),
+            alt.Tooltip('volumes:Q', title='Процент статей (x100)', format='.4f')
+        ]
     ).properties(
-        title='Stock News Game'
+        title=f'Ticker: {level.Ticker}. Start date: {level.dates[0]}'
     )
+
+    chart_tones = alt.Chart(df).mark_area(
+        color='green',
+        line=True
+    ).encode(
+        x='index',
+        y='tones'
+    )
+
+    chart = alt.layer(
+        chart, chart_tones,
+    )
+
     chart.height = 400
     chart.width = 1200
     return chart
@@ -76,7 +91,7 @@ def plot_level(level: Level):
 
 def show_news(level):
     df = pd.DataFrame(level.news)
-    df.columns = ['Индекс дня', "Новость"]
+    df.columns = ['Номер дня', "Новость"]
     df_ = df.to_html(index=False)
     st.markdown(df_, unsafe_allow_html=True)
 
@@ -121,7 +136,6 @@ def main():
         st.title(_str)
     else:
         chart = plot_level(level)
-        col1, col2, col3 = st.beta_columns(3)
 
         _str = f'Вы ' + str(get_state.user_score) + ':' + str(get_state.model_score) + ' Модель'
         st.title(_str)
@@ -141,13 +155,19 @@ def main():
             else:
                 get_state.level += 1
 
+        st.markdown(f'### Company name: {level.company_name}')
+        if level.wiki_info:
+            st.markdown(f'#### Wiki info')
+            st.write(level.wiki_info)
+
+        col1, col2, col3 = st.beta_columns(3)
+
         if col3.button('Растет!'):
             score_round(1)
         if col2.button('Пропуск'):
             get_state.level += 1
         if col1.button('Падает!'):
             score_round(0)
-
         st.altair_chart(chart, use_container_width=True)
         show_news(level)
 

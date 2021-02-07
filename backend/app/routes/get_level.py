@@ -13,7 +13,7 @@ def _get_date_range(end_date: str, days_back: int):
     start_date = end_date - timedelta(days=days_back)
     return {
         (start_date + timedelta(days=x)).strftime("%Y-%m-%d"): x+1
-        for x in range(0, (end_date - start_date).days)
+        for x in range(0, days_back+1)
     }
 
 

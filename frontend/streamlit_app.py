@@ -45,16 +45,16 @@ def get_level(level_id: int, model_id: str) -> Level:
 def plot_level(level: Level):
     df = pd.DataFrame()
     # df['dates'] = level.dates[]
-    df['prices'] = level.prices
-    df['tones'] = level.tones
-    df['volumes'] = level.volumes
+    df['tones'] = pd.Series(level.tones)
+    df['prices'] = pd.Series(level.prices)
+    df['volumes'] = pd.Series(level.volumes)
     df = df.reset_index()
     df['index'] += 1
 
-    chart = alt.Chart(df).mark_area(
-        color="lightblue",
-        # interpolate='step-after',
-        line=True
+    chart = alt.Chart(df).mark_line(
+        point=True,
+        size=3,
+        interpolate='basis'
     ).encode(
         x=alt.X('index:N',
                 # scale=alt.Scale(domain=0),
@@ -64,13 +64,13 @@ def plot_level(level: Level):
                 # scale=alt.Scale(),
                 title='Цена закрытия'
                 ),
-        tooltip=[alt.Tooltip('tones', title='Тональность за день'),
-                 alt.Tooltip('volumes', title='Количество статей')]
+        tooltip=[alt.Tooltip('tones:Q', title='Тональность за день', format='.4f'),
+                 alt.Tooltip('volumes:Q', title='Процент статей (x100)', format='.4f')]
     ).properties(
         title='Stock News Game'
-    ).interactive()
+    )
     chart.height = 400
-    chart.width = 600
+    chart.width = 1200
     return chart
 
 
@@ -81,7 +81,20 @@ def show_news(level):
     st.markdown(df_, unsafe_allow_html=True)
 
 
+def load_styles():
+    st.markdown("<style>div.Widget.row-widget.stRadio > div{flex-direction:row;}</style>", unsafe_allow_html=True)
+    st.markdown("<style>div.row-widget.stRadio > div{flex-direction:row;}</style>", unsafe_allow_html=True)
+    st.markdown("<style>table { margin-bottom: 10px;}</style>", unsafe_allow_html=True)
+    st.markdown(
+        "<style>.reportview-container .main .block-container{max-width: 950px;}</style>",
+        unsafe_allow_html=True,
+    )
+
+
+
+
 def main():
+    load_styles()
     SessionState(level=0, model_score=0, user_score=0)
 
     get_state = get(level=0, model_score=0, user_score=0)

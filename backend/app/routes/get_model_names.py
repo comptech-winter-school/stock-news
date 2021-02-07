@@ -23,7 +23,7 @@ async def _get_model_names() -> GetModelNamesResponse:
             d_b, d_f = _get_days(model_id)
             res += [{
                 'model_id': model_id,
-                'name': f"Информация за {d_b} дней, предсказываем на {d_f} дней"
+                'name': f"Смотрим на {d_b} дней, угадываем на {d_f} дней"
             }]
 
         NAMES = GetModelNamesResponse(data=res)

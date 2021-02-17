@@ -42,3 +42,8 @@ uvicorn==0.11.5           # via -r requirements.in
 uvloop==0.14.0            # via uvicorn
 wcwidth==0.2.5            # via pytest
 websockets==8.1           # via uvicorn
+
+# Custom library for data_preprocess
+pandas==1.1.5
+gdeltdoc==1.0
+yfinance==0.1.55

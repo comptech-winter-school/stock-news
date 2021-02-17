@@ -1,4 +1,4 @@
-from app.db.wrappers import ClickHouse
+from app.db.wrappers import MongoDB
 
 DBS = {}
 
@@ -9,7 +9,7 @@ async def init_databases(config):
     DBS["clickhouse"] = await ClickHouse.init_async(config["clickhouse"])
     DBS["mysql"] = await MySQL.init_async(config["mysql"])
     """
-    pass
+    DBS["mongo"] = await MongoDB.init_async(config["mongo"])
 
 
 async def shutdown_databases():
@@ -17,4 +17,4 @@ async def shutdown_databases():
     await ClickHouse.close_async(DBS["clickhouse"])
     await MySQL.close_async(DBS["mysql"])
     """
-    pass
+    await MongoDB.close_async(DBS["mongo"])

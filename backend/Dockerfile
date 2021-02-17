@@ -1,5 +1,7 @@
 FROM python:3.8
 
+WORKDIR /app/backend
+
 # Setting Moscow time-zone
 ENV TZ=Europe/Moscow
 # hadolint ignore=DL3008
@@ -8,22 +10,9 @@ RUN ln -snf "/usr/share/zoneinfo/${TZ}" /etc/localtime && \
     apt-get install --no-install-recommends -y tzdata default-libmysqlclient-dev && \
     dpkg-reconfigure --frontend noninteractive tzdata
 
-WORKDIR /opt/project
+#WORKDIR /opt/project
 
-# Устанавливаем пакеты Python
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Копируем папку с приложением
-COPY app app
-COPY server.py server.py
-
-# Создаем папку с логами
-RUN mkdir logs
-
-# Копируем файлы конфигураций
-RUN mkdir config
-COPY config/app.yaml config/app.yaml
-RUN touch ./.env
-
-CMD ["python", "server.py"]
+# Копируем все файлы из текущей директории в /app контейнера
+COPY ./ /app
+# Устанавливаем все зависимости
+RUN pip install -r /app/requirements.txt --no-cache-dir
